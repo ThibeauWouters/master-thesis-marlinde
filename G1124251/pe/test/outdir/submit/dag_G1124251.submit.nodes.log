@@ -1,0 +1,87 @@
+000 (2630115.000.000) 2025-09-03 14:48:17 Job submitted from host: <145.107.7.246:9618?addrs=145.107.7.246-9618+[2a07-8500-120-e070--3f6]-9618&alias=taai-007.nikhef.nl&noUDP&sock=schedd_11406_2550>
+    DAG Node: G1124251_data0_1372281638-2548172_generation_arg_0
+...
+001 (2630115.000.000) 2025-09-03 14:48:38 Job executing on host: <145.107.4.122:9618?addrs=145.107.4.122-9618+[2a07-8500-120-e070--7a]-9618&alias=wn-sate-076.nikhef.nl&noUDP&sock=startd_32504_9e70>
+	SlotName: slot1_3@wn-sate-076.nikhef.nl
+	CondorScratchDir = "/scratch/condor_execute/dir_4094340"
+	Cpus = 1
+	Disk = 5245478
+	GPUs = 0
+	Memory = 8192
+...
+005 (2630115.000.000) 2025-09-03 14:49:21 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:39, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:39, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     1.00        1         1 
+	   Disk (KB)            :     1     5242880   5245478 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   788        8192      8192 
+	   TimeExecute (s)      :    43                       
+	   TimeSlotBusy (s)     :    43                       
+...
+000 (2630116.000.000) 2025-09-03 14:49:27 Job submitted from host: <145.107.7.246:9618?addrs=145.107.7.246-9618+[2a07-8500-120-e070--3f6]-9618&alias=taai-007.nikhef.nl&noUDP&sock=schedd_11406_2550>
+    DAG Node: G1124251_data0_1372281638-2548172_analysis_L1_arg_0
+...
+001 (2630116.000.000) 2025-09-03 14:49:38 Job executing on host: <145.107.5.62:9618?addrs=145.107.5.62-9618+[2a07-8500-120-e070--53e]-9618&alias=wn-lot-062.nikhef.nl&noUDP&sock=startd_31554_ff78>
+	SlotName: slot1_1@wn-lot-062.nikhef.nl
+	CondorScratchDir = "/scratch/condor_execute/dir_4140688"
+	Cpus = 64
+	Disk = 5246215
+	GPUs = 0
+	Memory = 51200
+...
+005 (2630116.000.000) 2025-09-03 17:37:24 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 4 19:27:11, Sys 0 00:00:55  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 4 19:27:11, Sys 0 00:00:55  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     6.59       64        64 
+	   Disk (KB)            :     1     5242880   5246215 
+	   GPUs                 :                           0 
+	   Memory (MB)          :  1362       51200     51200 
+	   TimeExecute (s)      : 10066                       
+	   TimeSlotBusy (s)     : 10066                       
+...
+000 (2630532.000.000) 2025-09-03 17:37:33 Job submitted from host: <145.107.7.246:9618?addrs=145.107.7.246-9618+[2a07-8500-120-e070--3f6]-9618&alias=taai-007.nikhef.nl&noUDP&sock=schedd_11406_2550>
+    DAG Node: G1124251_data0_1372281638-2548172_analysis_L1_final_result_arg_0
+...
+001 (2630532.000.000) 2025-09-03 17:37:45 Job executing on host: <145.107.4.106:9618?addrs=145.107.4.106-9618+[2a07-8500-120-e070--6a]-9618&alias=wn-sate-060.nikhef.nl&noUDP&sock=startd_31163_cdf0>
+	SlotName: slot1_31@wn-sate-060.nikhef.nl
+	CondorScratchDir = "/scratch/condor_execute/dir_3464412"
+	Cpus = 1
+	Disk = 5245494
+	GPUs = 0
+	Memory = 4096
+...
+005 (2630532.000.000) 2025-09-03 17:37:51 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:02, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:02, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :        1  5242880   5245494 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0     4096      4096 
+	   TimeExecute (s)      :        6                    
+	   TimeSlotBusy (s)     :        7                    
+...
