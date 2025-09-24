@@ -1,0 +1,20 @@
+universe = vanilla
+executable = /data/gravwav/twouters/miniconda3/envs/bilby_pipe_neural_prior/bin/bilby_pipe_generation
+request_memory = 8.0GB
+request_disk = 5.0GB
+request_cpus = 1
+initialdir = /data/gravwav/mdrent/master-thesis-marlinde/G1124251/pe/test2
+notification = Never
+requirements = 
+log = outdir/log_data_generation/G1124251_data0_1372281638-2548172_generation.log
+output = outdir/log_data_generation/G1124251_data0_1372281638-2548172_generation.out
+error = outdir/log_data_generation/G1124251_data0_1372281638-2548172_generation.err
+priority = 0
+environment = "HDF5_USE_FILE_LOCKING=FAlSE OMP_NUM_THREADS=1 OMP_PROC_BIND=false GWDATAFIND_SERVER=https://datafind.igwn.org"
+MY.flock_local = True
+MY.DESIRED_Sites = "nogrid"
+arguments = $(ARGS)
+# Stoomboot-specific settings
++USeOS          = "el9"
++JobCategory    = "medium"
+queue

@@ -1,0 +1,155 @@
+12:27 bilby_pipe INFO    : Running bilby_pipe version: 1.6.0
+12:27 bilby_pipe INFO    : Running bilby version: 2.6.0
+12:27 bilby_pipe INFO    : Command line arguments: Namespace(ini='outdir/G1124251_config_complete.ini', verbose=False, calibration_model='CubicSpline', calibration_correction_type=None, spline_calibration_envelope_dict="{'L1': '/data/gravwav/twouters/datasets/calibration_uncertainty_L1_1439515461.txt'}", spline_calibration_nodes=10, spline_calibration_amplitude_uncertainty_dict=None, spline_calibration_phase_uncertainty_dict=None, calibration_prior_boundary='reflective', idx=0, data_dump_file='outdir/data/G1124251_data0_1372281638-2548172_generation_data_dump.pickle', ignore_gwpy_data_quality_check=True, gps_tuple=None, gps_file=None, timeslide_file=None, timeslide_dict=None, trigger_time='1372281638.2548172', n_simulation=0, data_dict="{'L1': '/data/gravwav/twouters/datasets/G1124251/frames/L-L1_GWOSC_O4a_16KHZ_R1-1372278784-4096.gwf'}", data_format=None, allow_tape=True, channel_dict="{'L1': 'GWOSC-16KHZ_R1_STRAIN'}", frame_type_dict=None, data_find_url=None, data_find_urltype='osdf', gaussian_noise=False, zero_noise=False, coherence_test=False, detectors=['L1'], duration=256.0, generation_seed=None, psd_dict="{'L1': '/data/gravwav/twouters/datasets/G1124251/pycbc_psd/psd_L1_G1124251_gwosc.txt'}", psd_fractional_overlap=0.5, post_trigger_duration=2.0, sampling_frequency=4096.0, psd_length=8, psd_maximum_duration=256, psd_method='median', psd_start_time=None, maximum_frequency='2048.0', minimum_frequency='20', tukey_roll_off=0.4, resampling_method='lal', injection=False, injection_dict=None, injection_file=None, injection_numbers=[None], injection_waveform_approximant=None, injection_frequency_domain_source_model=None, injection_waveform_arguments=None, accounting='ligo.prod.o4.cbc.pe.bilby', accounting_user=None, label='G1124251_data0_1372281638-2548172_analysis_L1', local=False, local_generation=False, generation_pool='local-pool', local_plot=True, outdir='/data/gravwav/mdrent/master-thesis-marlinde/G1124251/pe/test2/outdir', overwrite_outdir=False, periodic_restart_time=28800, request_disk=5.0, request_memory=50.0, request_memory_generation=8.0, request_cpus=64, conda_env=None, scheduler='condor', scheduler_args=None, scheduler_module=[None], scheduler_env=None, scheduler_analysis_time='1-00:00:00', submit=False, condor_job_priority=0, transfer_files=False, additional_transfer_paths=[None], environment_variables=None, getenv=[None], disable_hdf5_locking=False, log_directory=None, osg=False, desired_sites=None, analysis_executable=None, analysis_executable_parser=None, scitoken_issuer=None, container=None, calibration_marginalization=False, distance_marginalization=True, distance_marginalization_lookup_table=None, phase_marginalization=False, time_marginalization=False, jitter_time=True, reference_frame='sky', time_reference='geocent', likelihood_type='MBGravitationalWaveTransient', calibration_lookup_table=None, number_of_response_curves=1000, roq_folder=None, roq_linear_matrix=None, roq_quadratic_matrix=None, roq_weights=None, roq_weight_format='hdf5', roq_scale_factor=1.0, fiducial_parameters=None, update_fiducial_parameters=False, epsilon=0.025, extra_likelihood_kwargs=None, plot_trace=False, plot_data=False, plot_injection=False, plot_spectrogram=False, plot_calibration=False, plot_corner=False, plot_marginal=False, plot_skymap=False, plot_waveform=False, plot_format='png', create_summary=False, email=None, notification='Never', queue=None, existing_dir=None, webdir=None, summarypages_arguments=None, result_format='hdf5', final_result=True, final_result_nsamples=20000, default_prior='BNSPriorDict', deltaT=0.2, prior_file='/data/gravwav/mdrent/master-thesis-marlinde/G1124251/pe/test2/prior.prior', prior_dict=None, enforce_signal_duration=False, postprocessing_executable=None, postprocessing_arguments=None, single_postprocessing_executable=None, single_postprocessing_arguments=None, sampler='dynesty', sampling_seed=1, n_parallel=1, sampler_kwargs="{'nlive': 1024, 'naccept': 60, 'check_point_plot': True, 'check_point_delta_t': 1800, 'print_method': 'interval-60', 'sample': 'acceptance-walk', 'npool': 64}", reweighting_configuration=None, reweight_nested_samples=True, waveform_generator='bilby.gw.waveform_generator.LALCBCWaveformGenerator', reference_frequency=20.0, waveform_approximant='IMRPhenomXP_NRTidalv3', catch_waveform_errors=True, pn_spin_order=-1, pn_tidal_order=-1, pn_phase_order=-1, pn_amplitude_order=0, numerical_relativity_file=None, waveform_arguments_dict=None, mode_array=[None], frequency_domain_source_model='lal_binary_neutron_star', conversion_function=None, generation_function=None, cosmology='Planck15')
+12:27 bilby_pipe INFO    : Unknown command line arguments: []
+12:27 bilby_pipe INFO    : Sampling seed set to 1
+12:27 bilby_pipe WARNING : calibration_correction_type=None is passed. Assuming calibration_correction_type='data' for H1, L1, K1, and 'template' for V1
+12:27 bilby_pipe INFO    : Found data for detectors = ['L1']
+12:27 bilby_pipe INFO    : Using data for detectors = ['L1']
+12:27 bilby_pipe INFO    : L1: sampling-frequency=4096.0, segment-start-time=1372281384.2547607, duration=256.0
+12:27 bilby_pipe INFO    : Using the binary_neutron_star_frequency_sequence source model
+12:27 bilby_pipe INFO    : Using conversion_function convert_to_lal_binary_neutron_star_parameters
+12:27 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.binary_neutron_star_frequency_sequence
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_neutron_star_parameters
+12:27 bilby WARNING : The input maximum_banding_frequency is too large.It is set to be 2722.7899806269393 Hz.
+12:27 bilby_pipe INFO    : Using generation_function generate_all_bns_parameters
+12:27 bilby INFO    : Running for label 'G1124251_data0_1372281638-2548172_analysis_L1', output will be saved to 'outdir/result'
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+12:27 bilby INFO    : Using lal version 7.7.0
+12:27 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.26.1;Id: c90e1175f5e238741185744a4e516e58d42a9aec;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+12:27 bilby INFO    : Using lalsimulation version 6.2.0
+12:27 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.26.1;Id: c90e1175f5e238741185744a4e516e58d42a9aec;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+/data/gravwav/twouters/miniconda3/envs/bilby_pipe_neural_prior/lib/python3.11/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+12:27 bilby INFO    : Analysis priors:
+12:27 bilby INFO    : chirp_mass=bilby.gw.prior.UniformInComponentsChirpMass(minimum=0.98, maximum=0.995, name='chirp_mass', latex_label='$\\mathcal{M}$', unit='$M_{\\odot}$', boundary=None)
+12:27 bilby INFO    : mass_ratio=bilby.gw.prior.UniformInComponentsMassRatio(minimum=0.125, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None, equal_mass=False)
+12:27 bilby INFO    : a_1=Uniform(minimum=0, maximum=0.15, name='a_1', latex_label='$a_1$', unit=None, boundary=None)
+12:27 bilby INFO    : a_2=Uniform(minimum=0, maximum=0.15, name='a_2', latex_label='$a_2$', unit=None, boundary=None)
+12:27 bilby INFO    : tilt_1=Sine(minimum=0, maximum=3.141592653589793, name='tilt_1', latex_label='$\\theta_1$', unit=None, boundary=None)
+12:27 bilby INFO    : tilt_2=Sine(minimum=0, maximum=3.141592653589793, name='tilt_2', latex_label='$\\theta_2$', unit=None, boundary=None)
+12:27 bilby INFO    : phi_12=Uniform(minimum=0, maximum=6.283185307179586, name='phi_12', latex_label='$\\Delta\\phi$', unit=None, boundary='periodic')
+12:27 bilby INFO    : phi_jl=Uniform(minimum=0, maximum=6.283185307179586, name='phi_jl', latex_label='$\\phi_{JL}$', unit=None, boundary='periodic')
+12:27 bilby INFO    : lambda_1=Uniform(minimum=0, maximum=5000.0, name='lambda_1', latex_label='$\\Lambda_1$', unit=None, boundary=None)
+12:27 bilby INFO    : lambda_2=Uniform(minimum=0, maximum=5000.0, name='lambda_2', latex_label='$\\Lambda_2$', unit=None, boundary=None)
+12:27 bilby INFO    : geocent_time=Uniform(minimum=1372281638.1548173, maximum=1372281638.3548172, name='geocent_time', latex_label='$t_c$', unit='s', boundary=None)
+12:27 bilby INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+12:27 bilby INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+12:27 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+12:27 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+12:27 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
+12:27 bilby INFO    : recalib_L1_amplitude_0=Gaussian(mu=0.0038284784603451727, sigma=0.0037747306973023942, name='recalib_L1_amplitude_0', latex_label='$A^L1_0$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_amplitude_1=Gaussian(mu=0.00024333398767143906, sigma=0.006757240381102301, name='recalib_L1_amplitude_1', latex_label='$A^L1_1$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_amplitude_2=Gaussian(mu=-0.0018775797033714348, sigma=0.009644438849075556, name='recalib_L1_amplitude_2', latex_label='$A^L1_2$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_amplitude_3=Gaussian(mu=-0.0008232596134485875, sigma=0.00793632242698382, name='recalib_L1_amplitude_3', latex_label='$A^L1_3$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_amplitude_4=Gaussian(mu=0.00021696938858490326, sigma=0.010771427661925292, name='recalib_L1_amplitude_4', latex_label='$A^L1_4$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_amplitude_5=Gaussian(mu=0.00033678110899269467, sigma=0.009960270707505658, name='recalib_L1_amplitude_5', latex_label='$A^L1_5$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_amplitude_6=Gaussian(mu=0.00028146575164368886, sigma=0.004240055395418654, name='recalib_L1_amplitude_6', latex_label='$A^L1_6$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_amplitude_7=Gaussian(mu=-1.848216812369021e-05, sigma=0.0038441981379561353, name='recalib_L1_amplitude_7', latex_label='$A^L1_7$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_amplitude_8=Gaussian(mu=0.0018598813715374292, sigma=0.008199863167986304, name='recalib_L1_amplitude_8', latex_label='$A^L1_8$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_amplitude_9=Gaussian(mu=0.01037319536509632, sigma=0.013339192333269592, name='recalib_L1_amplitude_9', latex_label='$A^L1_9$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_phase_0=Gaussian(mu=0.0006116786495745248, sigma=0.0061393834433328565, name='recalib_L1_phase_0', latex_label='$\\phi^L1_0$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_phase_1=Gaussian(mu=-0.002554705110693989, sigma=0.0074430922566902005, name='recalib_L1_phase_1', latex_label='$\\phi^L1_1$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_phase_2=Gaussian(mu=-0.0009783171399640625, sigma=0.00722224003131966, name='recalib_L1_phase_2', latex_label='$\\phi^L1_2$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_phase_3=Gaussian(mu=-0.0013604892941685327, sigma=0.011288872687765078, name='recalib_L1_phase_3', latex_label='$\\phi^L1_3$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_phase_4=Gaussian(mu=-0.002521875616600896, sigma=0.014976455717324127, name='recalib_L1_phase_4', latex_label='$\\phi^L1_4$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_phase_5=Gaussian(mu=-0.0015964182900351314, sigma=0.007875274428840746, name='recalib_L1_phase_5', latex_label='$\\phi^L1_5$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_phase_6=Gaussian(mu=-0.0022023074024372195, sigma=0.0038859859179751215, name='recalib_L1_phase_6', latex_label='$\\phi^L1_6$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_phase_7=Gaussian(mu=-0.0050334859206890865, sigma=0.004365408697429263, name='recalib_L1_phase_7', latex_label='$\\phi^L1_7$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_phase_8=Gaussian(mu=-0.00664269742882866, sigma=0.007868310350004792, name='recalib_L1_phase_8', latex_label='$\\phi^L1_8$', unit=None, boundary='reflective')
+12:27 bilby INFO    : recalib_L1_phase_9=Gaussian(mu=-0.009962950669279394, sigma=0.014474827887438741, name='recalib_L1_phase_9', latex_label='$\\phi^L1_9$', unit=None, boundary='reflective')
+12:27 bilby INFO    : luminosity_distance=757.3617876306158
+12:27 bilby INFO    : recalib_L1_frequency_0=19.999999999999996
+12:27 bilby INFO    : recalib_L1_frequency_1=33.45004123801494
+12:27 bilby INFO    : recalib_L1_frequency_2=55.945262941244984
+12:27 bilby INFO    : recalib_L1_frequency_3=93.56856762281166
+12:27 bilby INFO    : recalib_L1_frequency_4=156.49362227825205
+12:27 bilby INFO    : recalib_L1_frequency_5=261.7359059346934
+12:27 bilby INFO    : recalib_L1_frequency_6=437.7538423492341
+12:27 bilby INFO    : recalib_L1_frequency_7=732.144203934069
+12:27 bilby INFO    : recalib_L1_frequency_8=1224.512690688412
+12:27 bilby INFO    : recalib_L1_frequency_9=2048.0
+12:27 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.multiband.MBGravitationalWaveTransient'>
+12:27 bilby INFO    : Analysis likelihood noise evidence: -502221.8003693206
+12:27 bilby INFO    : Single likelihood evaluation took 2.415e-02 s
+12:27 bilby WARNING : Kwargs contain both 'rstate' and 'seed', ignoring 'seed'.
+12:27 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 1024, 'bound': 'live', 'sample': 'acceptance-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': Generator(PCG64) at 0x14932AEE84A0, 'queue_size': 64, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.1, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x149328d9f890>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': 1}
+12:27 bilby INFO    : Global meta data was removed from the result object for compatibility. Use the `BILBY_INCLUDE_GLOBAL_METADATA` environment variable to include it. This behaviour will be removed in a future release. For more details see: https://bilby-dev.github.io/bilby/faq.html#global-meta-data
+12:27 bilby INFO    : Checkpoint every check_point_delta_t = 1800s
+12:27 bilby INFO    : Using dynesty version 2.1.5
+12:27 bilby INFO    : Using the bilby-implemented acceptance-walk sampling with an average of 60 accepted steps per MCMC and maximum length 5000
+12:27 bilby INFO    : Setting up multiproccesing pool with 64 processes
+12:27 bilby INFO    : Resume file outdir/result/G1124251_data0_1372281638-2548172_analysis_L1_resume.pickle does not exist.
+12:27 bilby INFO    : Generating initial points from the prior
+12:58 bilby INFO    : Written checkpoint file outdir/result/G1124251_data0_1372281638-2548172_analysis_L1_resume.pickle
+13:28 bilby INFO    : Written checkpoint file outdir/result/G1124251_data0_1372281638-2548172_analysis_L1_resume.pickle
+13:58 bilby INFO    : Written checkpoint file outdir/result/G1124251_data0_1372281638-2548172_analysis_L1_resume.pickle
+14:29 bilby INFO    : Written checkpoint file outdir/result/G1124251_data0_1372281638-2548172_analysis_L1_resume.pickle
+14:59 bilby INFO    : Written checkpoint file outdir/result/G1124251_data0_1372281638-2548172_analysis_L1_resume.pickle
+15:29 bilby INFO    : Written checkpoint file outdir/result/G1124251_data0_1372281638-2548172_analysis_L1_resume.pickle
+15:44 bilby INFO    : Written checkpoint file outdir/result/G1124251_data0_1372281638-2548172_analysis_L1_resume.pickle
+15:45 bilby INFO    : Starting to close worker pool.
+15:45 bilby INFO    : Finished closing worker pool.
+15:45 bilby INFO    : Rejection sampling nested samples to obtain 6047 posterior samples
+15:45 bilby INFO    : Sampling time: 3:17:37.176061
+15:45 bilby INFO    : Computing per-detector log likelihoods.
+15:45 bilby INFO    : Using a pool with size 64 for nsamples=6047
+15:45 bilby INFO    : Reconstructing marginalised parameters.
+15:45 bilby INFO    : Using a pool with size 64 for nsamples=6047
+15:46 bilby INFO    : Computing SNRs for every sample.
+15:46 bilby INFO    : Using a pool with size 64 for nsamples=6047
+15:46 bilby INFO    : Summary of results:
+nsamples: 6047
+ln_noise_evidence: -502221.800
+ln_evidence: -502212.440 +/-  0.147
+ln_bayes_factor:  9.360 +/-  0.147
+
+15:46 bilby_pipe INFO    : Run completed
